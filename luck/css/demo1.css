@@ -1,0 +1,108 @@
+body{
+    background: url(../images/bgg.jpg) no-repeat;
+    background-size: 100%;
+}
+
+
+ul{
+    width: 995px;
+    height: 555px;
+    padding: 0px;
+    list-style-type: none;
+    /*父级相对定位*/
+    
+}
+
+.choujiang_wai{
+    width: 995px;
+    height: 555px;
+    margin: 100px auto;
+    position: relative;
+}
+
+li{
+    width: 193px;
+    height: 133px;
+    /*子级绝对定位，父级相对定位，子级可以放在父级的任何位置*/
+    position: absolute;
+    opacity: 0.5;
+}
+
+.current{
+    opacity: 1;
+}
+
+li:nth-of-type(1){
+    left: 0px;
+    top: 0px;
+}
+li:nth-of-type(2){
+    left: 200px;
+    top: 0px;
+}
+li:nth-of-type(3){
+    left: 400px;
+    top: 0px;
+}   
+li:nth-of-type(4){
+    left: 600px;
+    top: 0px;
+}   
+li:nth-of-type(5){
+    left: 800px;
+    top: 0px;
+}   
+li:nth-of-type(6){
+    left: 800px;
+    top: 140px;
+}   
+li:nth-of-type(7){
+    left: 800px;
+    top: 280px;
+}   
+li:nth-of-type(8){
+    left: 800px;
+    top: 420px;
+}   
+li:nth-of-type(9){
+    left: 600px;
+    top: 420px;
+}   
+li:nth-of-type(10){
+    left: 400px;
+    top: 420px;
+}   
+li:nth-of-type(11){
+    left: 200px;
+    top: 420px;
+}   
+li:nth-of-type(12){
+    left: 0px;
+    top: 420px;
+}   
+li:nth-of-type(13){
+    left: 0px;
+    top: 280px;
+}   
+li:nth-of-type(14){
+    left: 0px;
+    top: 140px;
+}   
+#btn{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);        /*减去自身宽度*/
+    cursor: pointer;
+}
+
+/*伪对象，相当于在id = "btn"里面增加标签*/
+#btn::after{
+    content: "抽奖";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);        /*减去自身宽度*/
+    color: mintcream;
+    font-size: 20px;
+}

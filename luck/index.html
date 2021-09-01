@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>王者荣耀抽奖</title>
+        <link href="css/demo1.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="choujiang_wai">
+            <ul>
+                <li class="current"><img src="images/01.jpg" alt=""></li>
+                <li class=""><img src="images/02.jpg" alt=""></li>
+                <li class=""><img src="images/03.jpg" alt=""></li>
+                <li class=""><img src="images/04.jpg" alt=""></li>
+                <li class=""><img src="images/05.jpg" alt=""></li>
+                <li class=""><img src="images/06.jpg" alt=""></li>
+                <li class=""><img src="images/07.jpg" alt=""></li>
+                <li class=""><img src="images/08.jpg" alt=""></li>
+                <li class=""><img src="images/09.jpg" alt=""></li>
+                <li class=""><img src="images/10.jpg" alt=""></li>
+                <li class=""><img src="images/11.jpg" alt="" ></li>
+                <li class=""><img src="images/12.jpg" alt=""></li>
+                <li class=""><img src="images/13.jpg" alt="" ></li>
+                <li class=""><img src="images/14.jpg" alt=""></li>
+            </ul>
+            <span id="btn">
+                <img src="images/btn_bg.jpg" alt="">
+            </span>
+        </div>
+    </body>
+    <script>
+        
+        var i = 0;
+        var timer;
+        var tags = document.getElementsByTagName('li');
+        btn.onclick=function(){
+            //产生0到1之间的随机数
+            //parseInt把小数强制转化为整数
+            //clearInterval()停止定时器
+            clearInterval(timer);
+            var num = 14 + parseInt(Math.random()*14);
+            timer = setInterval(function(){
+                num = num - 1;
+                if(num < 0){
+                    clearInterval(timer);
+                }
+                i = i + 1;
+                if(i > 13){
+                    i = 0;
+                    tags[i].className='current';
+                }
+                for(var j=0;j<tags.length;j++){
+                    tags[j].className = '';
+                }
+                tags[i].className='current';
+                
+            },200)
+        }
+    </script>
+</html>
