@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            border-bottom: 1px solid #eee;
+            padding-top: 30px;
+        }
+
+        .box li {
+            height: 200px;
+            width: 30%;
+            box-shadow: 0 0 1px #f5a803;
+        }
+
+        .box li img {
+            width: 100%;
+            height: 120px;
+        }
+
+        li p{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        li span{
+            color: red;
+            text-align: right;
+        }
+        li:nth-child(3){
+            margin-top: 30px;
+        }
+        li:nth-child(2){
+            height: 230px;
+        }
+        li:nth-child(2) img{
+            height: 150px;
+        }
+        li:nth-child(1){
+            margin-top: 30px;
+        }
+
+        ol{
+           position: relative;
+           left: 0;
+           top: 0;
+        }
+
+        ol li{
+            width: 30%;
+        }
+
+        ol li:nth-child(1){
+            position: absolute;
+            left: 37.5%;
+        }
+
+        ol li:nth-child(2){
+            position: absolute;
+            left: -32.5%;
+        }
+
+        ol li:nth-child(3){
+            position: absolute;
+            left: 67.5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="box">
+            <li>
+                <img src="./images/aa.jpeg">
+                <p>Lorem, ipsum.</p>
+                <span>100</span>
+            </li>
+            <li>
+                <img src="./images/aa.jpeg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <span>200</span>
+            </li>
+            <li>
+                <img src="./images/aa.jpeg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <span>4000</span>
+            </li>
+        </ul>
+
+
+        <ol class="box">
+            <li>
+                <img src="./images/aa.jpeg">
+                <p>Lorem, ipsum.</p>
+                <span>100</span>
+            </li>
+            <li>
+                <img src="./images/aa.jpeg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <span>200</span>
+            </li>
+            <li>
+                <img src="./images/aa.jpeg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <span>4000</span>
+            </li>
+        </ol>
+    </div>
+</body>
+
+</html>
