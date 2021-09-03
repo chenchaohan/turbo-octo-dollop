@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="page-view-size" content="1280*1270" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* border: 1px solid #0ff; */
+            width: 1280px;
+            height: 720px;
+            overflow: hidden;
+            position: relative;
+            background-color: #222;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+            padding: 10px;
+        }
+
+        ol li {
+            width: 260px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 30px;
+            color: #fff;
+            font-weight: bolder;
+            box-sizing: border-box;
+            border: 1px solid blue;
+            ;
+        }
+        ol li.active{
+            background: burlywood;
+
+        }
+
+        ol li:hover {
+            background-color: aquamarine;
+        }
+
+        .menu {
+            position: relative;
+            left: 0;
+            top: 98px;
+            width: 280px;
+        }
+
+        .container {
+            position: absolute;
+            left: 280px;
+            top: 0;
+            width: 1000px;
+            /* background-color: black; */
+            font-size: 0;
+        }
+
+        .pagination {
+            position: absolute;
+            right: 20px;
+            bottom: 0;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .container li {
+            width: 245px;
+            height: 220px;
+            position: relative;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            overflow: hidden;
+            /* background-color: antiquewhite; */
+            display: inline-block;
+        }
+
+        .container li.active {
+            box-shadow:0 0 30px 10px yellow;
+        }
+        .container li.active p{
+            animation: anima 6s linear 1s infinite normal;
+        }
+
+        .container li img {
+            width: 225px;
+            height: 160px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .container li div {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            width: 225px;
+            height: 40px;
+            line-height: 40px;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        .container li p {
+            font-size: 20px;
+            color: #fff;
+            width: 300px;
+        }
+
+        .pagination span {
+            width: 30px;
+            font-size: 30px;
+        }
+
+        .pagination .current {
+            color: red;
+        }
+
+        @keyframes anima {
+            0% {
+                transform: translateX(0px);
+            }
+
+            50% {
+                transform: translateX(-225px);
+            }
+
+            100% {
+                transform: translateX(0px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <ol>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+            <li>item5</li>
+            <li>item6</li>
+            <li>item7</li>
+            <li>item8</li>
+            <li>item9</li>
+            <li>item10</li>
+        </ol>
+    </div>
+    <ul class="container">
+        <li>
+            <img src="./images/aa.jpeg" alt="">
+            <div class="title">
+                <p>Lorem, ipsum dolor.1</p>
+            </div>
+        </li>
+        <li>
+            <img src="./images/aa.jpeg" alt="">
+            <div class="title">
+                <p>Lorem, ipsum dolor.2</p>
+
+            </div>
+        </li>
+        <li>
+            <img src="./images/aa.jpeg" alt="">
+            <div class="title">
+                <p>Lorem, ipsum dolor.3</p>
+
+            </div>
+        </li>
+        <li>
+            <img src="./images/aa.jpeg" alt="">
+            <div class="title">
+                <p>4Lorem, ipsum dolor.</p>
+
+            </div>
+        </li>
+        <li>
+            <img src="./images/aa.jpeg" alt="">
+            <div class="title">
+                <p>5Lorem, ipsum dolor.</p>
+
+            </div>
+        </li>
+        <li>
+            <img src="./images/aa.jpeg" alt="">
+            <div class="title">
+                <p>6Lorem, ipsum dolor.</p>
+
+            </div>
+        </li>
+        <li>
+            <img src="./images/aa.jpeg" alt="">
+            <div class="title">
+                <p>7Lorem, ipsum dolor.</p>
+
+            </div>
+        </li>
+        <li class="active">
+            <img src="./images/aa.jpeg" alt="">
+            <div class="title">
+                <p>8Lorem, ipsum Lorem, ipsum dolor.</p>
+
+            </div>
+        </li>
+        <li>
+            <img src="./images/aa.jpeg" alt="">
+            <div class="title">
+                <p>9Lorem, ipsum dolor.</p>
+
+            </div>
+        </li>
+
+        <li>
+            <img src="./images/aa.jpeg" alt="">
+            <div class="title">
+                <p>10Lorem, ipsum dolor.</p>
+
+            </div>
+        </li>
+        <li>
+            <img src="./images/aa.jpeg" alt="">
+            <div class="title">
+                <p>11Lorem, ipsum dolor.</p>
+
+            </div>
+        </li>
+        <li>
+            <img src="./images/aa.jpeg" alt="">
+            <div class="title">
+                <p>12Lorem, ipsum dolor.</p>
+
+            </div>
+        </li>
+
+    </ul>
+    <div class="pagination">
+        <span class="current">1</span><span>/</span><span class="total">12</span>
+    </div>
+</body>
+<script>
+    //[].slice.call(document.getElementsByTagName('*')).forEach
+    //    ((ele) => { ele.style.setProperty('border', '1px solid #' + Math.random().toString(16).slice(2, 8)); })
+</script>
+
+</html>
