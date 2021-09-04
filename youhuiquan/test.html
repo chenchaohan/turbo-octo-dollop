@@ -1,0 +1,441 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="page-view-size" content="1280*1270" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+    <title>电视营业厅</title>
+
+    <!--css引用-->
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+
+    <!--SEO(重要)-->
+    <meta name="keywords"
+        content="广西电信宽带,光纤,光纤宽带,电信宽带,电信宽带套餐,电信宽带资费,电信宽带价格,电信宽带升级,宽带报装,宽带提速,宽带缴费,百兆光纤,百兆宽带,广西电信,IPTV,宽带电视,网络电视">
+    <meta name="description"
+        content="广西电信网上营业厅为您提供广西光纤宽带,电信宽带套餐,宽带提速升级,是您办理电信宽带报装,光纤宽带缴费和查询宽带资费价格的官方网站,电信宽带升级,宽带报装,宽带提速,宽带缴费,办理IPTV可在本站一步办理。">
+    <!--SEO(重要) end-->
+
+    <!--注：告诉设备不要将页面中的数字识别为电话号码-->
+    <meta content="email=no" name="format-detection" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+</head>
+<style type="text/css">
+    body {
+        background: url('images/c_bg.png') no-repeat;
+        width: 1280px;
+        color: white;
+        margin: auto 0;
+        position: relative;
+    }
+
+    ul li {
+        z-index: 999;
+    }
+
+    .box {
+        justify-content: center;
+        align-items: center;
+        margin: auto 0;
+    }
+
+    .boxs-center {
+        height: 590px;
+        padding: 0;
+        margin-left: 190px;
+    }
+
+    .boxs-li {
+        width: 900px;
+        height: 600px;
+        /* overflow-y: scroll; */
+        width: 900px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: auto 0;
+    }
+
+    .boxs-center li {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        margin: 15px calc(10% / 6);
+        /* padding-top: 15px; */
+    }
+
+    .li-imgs {
+        background: url('images/c_get.png') center;
+    }
+    .li-imgs2 {
+        background: url('images/c_get_done.png') center;
+    }
+    .li-imgs3 {
+        background: url('images/c_get_over1.png') center;
+    }
+    .li-imgs4 {
+        background: url('images/c_get_over2.png') center;
+    }
+
+    .li-imgs-bg{
+        width: 259px;
+        height: 127px;
+    }
+    .li-imgs-bg-done{
+        width: 200px;
+        height: 127px;
+    }
+
+    .price-num {
+        font-size: 72px;
+        font-weight: bold;
+    }
+
+    .price-f {
+        font-weight: bold;
+        font-size: 26px;
+        margin-left: 10px;
+    }
+
+    .price-tips {
+        background: rgb(255, 241, 0);
+        border-radius: 20px;
+        padding: 5px 20px;
+        font-size: 10px;
+        color: blue;
+        font-weight: bold;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    .mask {
+        background: black;
+        opacity: .2;
+        position: absolute;
+        width: 920px;
+        height: 600px;
+        z-index: 0;
+        border-radius: 5px;
+        left: 180px;
+    }
+
+    .box-btn0,
+    .box-btn1,
+    .box-btn2,
+    .box-btn3 {
+        /* margin-top: 10px; */
+        border: 4px solid transparent;
+        transition: all 0.6s;
+    }
+
+    .current {
+        border-color: #fff100 !important;
+        transform: scale(1.02);
+        border-radius: 15px;
+    }
+
+    .main {
+        width: 1280px;
+        margin: 0 auto;
+    }
+
+    #title {
+        height: 30px;
+        line-height: 30px;
+        margin-left: 180px;
+    }
+
+    #title span {
+        float: left;
+        width: 120px;
+        height: 30px;
+        font-size: 18px;
+        /* margin-right: 5px; */
+        color: rgb(142, 179, 223);
+        /* background: #eee; */
+        /* text-align: center; */
+        cursor: pointer;
+        /* font-weight: bold; */
+    }
+
+    #title span.on {
+        /* background: #333; */
+        color: #fff;
+        text-shadow: .2rem 0rem 2rem white, .2rem 0rem 2rem white, .2rem 0rem 2rem white, .2rem 0rem 2rem white;
+    }
+
+    .text {
+        color: #fff !important;
+        text-shadow: .2rem 0rem 2rem white, .2rem 0rem 2rem white, .2rem 0rem 2rem white, .2rem 0rem 2rem white;
+    }
+
+    #con {
+        /* margin-left: 180px; */
+        /* background: #fafafa; */
+        /* height: 200px; */
+        /* border-top: 2px solid #333; */
+    }
+
+    #con ul {
+        display: none;
+    }
+
+    #con ul.on {
+        display: block;
+    }
+
+    #con ul li {
+        list-style-type: none;
+        /* height: 24px;
+            line-height: 24px;
+            border-bottom: 1px dotted #ccc;
+            text-indent: 10px; */
+    }
+</style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <h4 id="title">
+                <span class="text-btn">可领取</span>
+                <span class="text-btn">已领取</span>
+                <span class="text-btn">已使用</span>
+                <span class="text-btn">已过期</span>
+            </h4>
+            <div id="con">
+                <div class="mask"></div>
+                <!-- 优惠券 -->
+                <ul class="boxs-center on">
+                    <div class="boxs-li">
+                        <li>
+                            <div class="li-imgs box-btn0 li-imgs-bg">
+                                <div><span class="price-f">￥</span><span class="price-num">8</span> xxx产品优惠券</div>
+                                <div><span class="price-tips">仅限xxx产品订购时使用</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-imgs box-btn0 li-imgs-bg">
+                                <div><span class="price-f">￥</span><span class="price-num">8</span> xxx产品优惠券</div>
+                                <div><span class="price-tips">仅限xxx产品订购时使用</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-imgs box-btn0 li-imgs-bg">
+                                <div><span class="price-f">￥</span><span class="price-num">8</span> xxx产品优惠券</div>
+                                <div><span class="price-tips">仅限xxx产品订购时使用</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-imgs box-btn0 li-imgs-bg">
+                                <div><span class="price-f">￥</span><span class="price-num">8</span> xxx产品优惠券</div>
+                                <div><span class="price-tips">仅限xxx产品订购时使用</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-imgs box-btn0 li-imgs-bg">
+                                <div><span class="price-f">￥</span><span class="price-num">8</span> xxx产品优惠券</div>
+                                <div><span class="price-tips">仅限xxx产品订购时使用</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-imgs box-btn0 li-imgs-bg">
+                                <div><span class="price-f">￥</span><span class="price-num">8</span> xxx产品优惠券</div>
+                                <div><span class="price-tips">仅限xxx产品订购时使用</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-imgs box-btn0 li-imgs-bg">
+                                <div><span class="price-f">￥</span><span class="price-num">8</span> xxx产品优惠券</div>
+                                <div><span class="price-tips">仅限xxx产品订购时使用</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-imgs box-btn0 li-imgs-bg">
+                                <div><span class="price-f">￥</span><span class="price-num">8</span> xxx产品优惠券</div>
+                                <div><span class="price-tips">仅限xxx产品订购时使用</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-imgs box-btn0 li-imgs-bg">
+                                <div><span class="price-f">￥</span><span class="price-num">8</span> xxx产品优惠券</div>
+                                <div><span class="price-tips">仅限xxx产品订购时使用</span></div>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+                <ul class="boxs-center">
+                    <div class="boxs-li">
+                        <li>
+                            <div class="li-imgs2 box-btn1 li-imgs-bg">
+                                <div><span class="price-f">￥</span><span class="price-num">8</span> xxx产品优惠券</div>
+                                <div><span class="price-tips">仅限xxx产品订购时使用</span></div>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+                <ul class="boxs-center">
+                    <div class="boxs-li">
+                        <li>
+                            <div class="li-imgs3 box-btn2 li-imgs-bg-done">
+                                <div><span class="price-f">￥</span><span class="price-num">8</span> xxx产品优惠券</div>
+                                <div><span class="price-tips">仅限xxx产品订购时使用</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-imgs3 box-btn2 li-imgs-bg-done">
+                                <div><span class="price-f">￥</span><span class="price-num">8</span> xxx产品优惠券</div>
+                                <div><span class="price-tips">仅限xxx产品订购时使用</span></div>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+                <ul class="boxs-center">
+                    <div class="boxs-li">
+                        <li>
+                            <div class="li-imgs4 box-btn3 li-imgs-bg-done">
+                                <div><span class="price-f">￥</span><span class="price-num">8</span> xxx产品优惠券</div>
+                                <div><span class="price-tips">仅限xxx产品订购时使用</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-imgs4 box-btn3 li-imgs-bg-done">
+                                <div><span class="price-f">￥</span><span class="price-num">8</span> xxx产品优惠券</div>
+                                <div><span class="price-tips">仅限xxx产品订购时使用</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-imgs4 box-btn3 li-imgs-bg-done">
+                                <div><span class="price-f">￥</span><span class="price-num">8</span> xxx产品优惠券</div>
+                                <div><span class="price-tips">仅限xxx产品订购时使用</span></div>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    window.onload = function () {
+        var oTitle = document.getElementById('title');
+        var aSpan = oTitle.getElementsByTagName('span');
+        var oCon = document.getElementById('con');
+        var aUl = oCon.getElementsByTagName('ul');
+
+        var text = document.getElementsByClassName("text-btn");
+        var tindex = 0;
+
+        var type = false
+        init()
+
+        function init() {
+            for (var i = 0; i < text.length; i++) {
+                var maxtindex = text.length
+                if (tindex == i) {
+                    text[i].classList.add("text");
+                }
+            }
+            if (!type) {
+                document.onkeydown = function (event) {
+                    code = event.keyCode;
+
+                    switch (code) {
+                        case 37:
+                            if (tindex > 0) {
+                                tindex--
+                            }
+                            text[tindex].classList.add("text");
+                            text[tindex + 1].classList.remove("text");
+
+                            console.log(tindex)
+
+                            aUl[tindex].classList.add("on")
+                            aUl[tindex + 1].classList.remove("on")
+                            break;
+                        case 39:
+                            if (tindex < (maxtindex - 1)) {
+                                tindex++
+                            }
+                            text[tindex].classList.add("text");
+                            text[tindex - 1].classList.remove("text");
+
+                            aUl[tindex].classList.add("on")
+                            aUl[tindex - 1].classList.remove("on")
+                            break;
+                        case 40:
+                            type = true
+                            container()
+                            break;
+                    }
+                }
+            }
+        }
+
+        function container() {
+            var box = document.getElementsByClassName("box-btn" + tindex);
+            var indexs = 0
+
+            for (var i = 0; i < box.length; i++) {
+                var maxindex = box.length
+                if (type) {
+                    if (indexs == i) {
+                        box[i].classList.add("current");
+                    }
+                }
+            }
+            // 键盘控制
+            if (type) {
+                document.onkeydown = function (event) {
+                    code = event.keyCode;
+
+                    switch (code) {
+                        case 37:
+                            if (indexs > 0) {
+                                indexs--
+                            }
+                            box[indexs].classList.add("current");
+                            box[indexs + 1].classList.remove("current");
+                            break;
+                        case 38:
+                            if (indexs > -1 && indexs < 3) {
+                                type = false
+                                box[indexs].classList.remove("current");
+                                return init()
+                            }
+                            box[indexs].classList.remove("current");
+                            box[indexs - 3].classList.add("current");
+                            indexs = indexs - 3
+                            break;
+                        case 39:
+                            if (indexs < (maxindex - 1)) {
+                                indexs++
+                            }
+                            box[indexs].classList.add("current");
+                            box[indexs - 1].classList.remove("current");
+                            break;
+                        case 40:
+                            if (indexs == (maxindex - 1)) {
+                                return
+                            }
+                            box[indexs + 3].classList.add("current");
+                            box[indexs].classList.remove("current");
+                            indexs = indexs + 3
+                            break;
+                    }
+                }
+            }
+        }
+
+    }
+</script>
+<script>
+
+</script>
+</html>
