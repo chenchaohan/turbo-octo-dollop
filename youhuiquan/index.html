@@ -278,7 +278,7 @@
 <div class="wrapper">
     <div class="main">
         <h4 id="title">
-            <span class="text-btn">可领取</span>
+            <span class="text-btn">可领取111</span>
             <span class="w50">|</span>
             <span class="text-btn">已领取</span>
             <span class="w50">|</span>
@@ -395,6 +395,26 @@
 </div>
 </body>
 <script type="text/javascript">
+
+document.onirkeypress = grabEvent;
+  document.onkeypress = grabEvent;
+  function grabEvent() {
+    var keyCode = event.which ? event.which : event.keyCode;
+    return press(keyCode);
+  }
+  function press(keyCode) {
+    switch (keyCode) {
+      case 8:
+        window.history.back()
+        // window.location.href = '${back_epg_url}';
+        return 0;
+        break;
+      default:
+        break;
+    }
+    return 1;
+  }
+  
     window.onload = function () {
         var oTitle = document.getElementById('title');
         var aSpan = oTitle.getElementsByTagName('span');
