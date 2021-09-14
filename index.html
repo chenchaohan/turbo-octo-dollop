@@ -1,219 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
-  <title>服务测评</title>
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/index.css">
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<title>服务测评</title>
+		<link rel="stylesheet" href="./css/normalize.css">
+		<link rel="stylesheet" href="./css/index.css">
+	</head>
 
-<body>
-  <header>
-    <div class="info">
-      <div class="info-l">
-        <i id="changeICON">切换</i>
-        <div class="avator"><img src="./images/aa.jpeg" alt=""></div>
-        <div class="info-detail">
-          <p>封先生</p>
-          <span>工号：00225</span>
-        </div>
-      </div>
-      <div class="info-r">
+	<body>
+		<header>
+			<div class="info">
+				<div class="info-l">
+					<i id="changeICON">角色切换</i>
+					<div class="avator"><img src="./images/aa.jpeg" alt=""></div>
+					<div class="info-detail">
+						<p>封先生</p>
+						<span>工号：00225</span>
+					</div>
+				</div>
+				<div class="info-r">
 
-        <span>今日未测评订单数量：<em>500</em></span>
-      </div>
-    </div>
-    <div class="bg">
-      <img src="./images/bg.png" />
-    </div>
-  </header>
-  <div class="content">
-    <main>
-      <div class="rectangle">
-        <div class="search">
-          <img class="icon" src="/images/search.png" />
-          <div class="select">
-            <select name="" id="">
-              <option value="">业务号码</option>
-              <option value="">订单编号</option>
-              <!-- <option value="">类型3</option> -->
-            </select>
-          </div>
-          <input type="search" placeholder="请输入关键词">
-          <button>搜索</button>
-        </div>
+					<span>今日未测评订单数量：<em>500</em></span>
+				</div>
+			</div>
+			<div class="bg">
+				<img src="./images/bg.png" />
+			</div>
+		</header>
+		<div class="content">
+			<main>
+				<div class="rectangle">
+					<div class="search">
+						<img class="icon" src="/images/search.png" />
+						<div class="select">
+							<select name="" id="">
+								<option value="">业务号码</option>
+								<option value="">订单编号</option>
+								<!-- <option value="">类型3</option> -->
+							</select>
+						</div>
+						<input type="search" placeholder="请输入关键词">
+						<button>搜索</button>
+					</div>
 
-        <ul class="tab">
-          <li class="active">今日测评订单</li>
-          <li>待测评</li>
-          <li>历史评价</li>
-        </ul>
+					<ul class="tab">
+						<li class="active">今日测评订单</li>
+						<li>待测评</li>
+						<li>历史评价</li>
+					</ul>
 
-      </div>
-    </main>
+				</div>
+			</main>
 
-    <div class="box">
-      <div class="order">
-        <div class="order-detail">
-          <ul>
-            <li>订单号码：<span>111000222</span> <span class="status">已评价</span> </li>
-            <li>业务号码：<span>0771000000000 </span></li>
-            <li>订单时间：<span>2021-08-18 13:00 </span></li>
-            <li>客户名称：<span>周先生</span></li>
-          </ul>
-          <button class="comment-link">推送评价链接</button>
-          <button class="comment-code">推送评价二维码</button>
-        </div>
-      </div>
+			<div class="box">
+				<div class="order">
+					<div class="order-detail">
+						<ul>
+							<li><span>订单号码：</span><span>117777777777777777777777777777777771000222</span> <span class="status">已评价</span> </li>
+							<li><span>业务号码：</span><span>07710001777777777777777777777000000 </span></li>
+							<li><span>订单时间：</span><span>2021-08-18 13:00 </span></li>
+							<li><span>客户名称：</span><span>周先生</span></li>
+						</ul>
+						<button class="comment-link">推送评价链接</button>
+						<button class="comment-code" onclick="popQrcode(id)">推送评价二维码</button>
+					</div>
+				</div>
 
-      <div class="order">
-        <div class="order-detail">
-          <ul>
-            <li>订单号码：<span>111000222</span> <span class="status">已评价</span> </li>
-            <li>业务号码：<span>0771000000000 </span><button class="comment-link">推送评价链接</button></li>
-            <li>订单时间：<span>2021-08-18 13:00 </span><button class="comment-code">推送评价二维码</button></li>
-            <li>客户名称：<span>周先生</span></li>
-          </ul>
-        </div>
-      </div>
+				<div class="order">
+					<div class="order-detail">
+						<ul>
+							<li><span>订单号码：</span><span>111000222</span> <span class="status">已评价</span> </li>
+							<li><span>业务号码：</span><span>0771000000000 </span></li>
+							<li><span>订单时间：</span><span>2021-08-18 13:00 </span></li>
+							<li><span>客户名称：</span><span>周先生</span></li>
+						</ul>
+						<button class="comment-link">推送评价链接</button>
+						<button class="comment-code">推送评价二维码</button>
+					</div>
+				</div>
 
-      <div class="order">
-        <div class="order-detail">
-          <ul>
-            <li>订单号码：<span>111000222</span> <span class="status">已评价</span> </li>
-            <li>业务号码：<span>0771000000000 </span><button class="comment-link">推送评价链接</button></li>
-            <li>订单时间：<span>2021-08-18 13:00 </span><button class="comment-code">推送评价二维码</button></li>
-            <li>客户名称：<span>周先生</span></li>
-          </ul>
-        </div>
-      </div>
+				<div class="order">
+					<div class="order-detail">
+						<ul>
+							<li><span>订单号码：</span><span>111000222</span> <span class="status">已评价</span> </li>
+							<li><span>业务号码：</span><span>0771000000000 </span></li>
+							<li><span>订单时间：</span><span>2021-08-18 13:00 </span></li>
+							<li><span>客户名称：</span><span>周先生</span></li>
+						</ul>
+						<button class="comment-link">推送评价链接</button>
+						<button class="comment-code">推送评价二维码</button>
+					</div>
+				</div>
 
-      <div class="order">
-        <div class="order-detail">
-          <ul>
-            <li>订单号码：<span>111000222</span> <span class="status">已评价</span> </li>
-            <li>业务号码：<span>0771000000000 </span><button class="comment-link">推送评价链接</button></li>
-            <li>订单时间：<span>2021-08-18 13:00 </span><button class="comment-code">推送评价二维码</button></li>
-            <li>客户名称：<span>周先生</span></li>
-          </ul>
-        </div>
-      </div>
+				<div class="order">
+					<div class="order-detail">
+						<ul>
+							<li><span>订单号码：</span><span>111000222</span> <span class="status">已评价</span> </li>
+							<li><span>业务号码：</span><span>0771000000000 </span></li>
+							<li><span>订单时间：</span><span>2021-08-18 13:00 </span></li>
+							<li><span>客户名称：</span><span>周先生</span></li>
+						</ul>
+						<button class="comment-link">推送评价链接</button>
+						<button class="comment-code">推送评价二维码</button>
+					</div>
+				</div>
 
-      <div class="order">
-        <div class="order-detail">
-          <ul>
-            <li>订单号码：<span>111000222</span> <span class="status">已评价</span> </li>
-            <li>业务号码：<span>0771000000000 </span><button class="comment-link">推送评价链接</button></li>
-            <li>订单时间：<span>2021-08-18 13:00 </span><button class="comment-code">推送评价二维码</button></li>
-            <li>客户名称：<span>周先生</span></li>
-          </ul>
-        </div>
-      </div>
+				<div class="order">
+					<div class="order-detail">
+						<ul>
+							<li><span>订单号码：</span><span>111000222</span> <span class="status">已评价</span> </li>
+							<li><span>业务号码：</span><span>0771000000000 </span></li>
+							<li><span>订单时间：</span><span>2021-08-18 13:00 </span></li>
+							<li><span>客户名称：</span><span>周先生</span></li>
+						</ul>
+						<button class="comment-link">推送评价链接</button>
+						<button class="comment-code">推送评价二维码</button>
+					</div>
+				</div>
 
-      <div class="order">
-        <div class="order-detail">
-          <ul>
-            <li>订单号码：<span>111000222</span> <span class="status">已评价</span> </li>
-            <li>业务号码：<span>0771000000000 </span><button class="comment-link">推送评价链接</button></li>
-            <li>订单时间：<span>2021-08-18 13:00 </span><button class="comment-code">推送评价二维码</button></li>
-            <li>客户名称：<span>周先生</span></li>
-          </ul>
-        </div>
-      </div>
+				<div class="order">
+					<div class="order-detail">
+						<ul>
+							<li><span>订单号码：</span><span>111000222</span> <span class="status">已评价</span> </li>
+							<li><span>业务号码：</span><span>0771000000000 </span></li>
+							<li><span>订单时间：</span><span>2021-08-18 13:00 </span></li>
+							<li><span>客户名称：</span><span>周先生</span></li>
+						</ul>
+						<button class="comment-link">推送评价链接</button>
+						<button class="comment-code">推送评价二维码</button>
+					</div>
+				</div>
 
-      <div id="loading-text" class="loading-text"></div>
+				<div id="loading-text" class="loading-text"></div>
 
-    </div>
-  </div>
+			</div>
+		</div>
 
-  <!-- 遮罩层 -->
-  <div id="pop" onclick="hidePop()"></div>
-    <div class="show-box" id="showBox">
-      <div class="avators">
-        <div class="clearfix">
-          <img id="img1" src="./images/aa.jpeg">
-          <img id="img2" src="./images/aa.jpeg">
-        </div>
+		<!-- 遮罩层 -->
+		<div id="pop" onclick="hidePop()"></div>
+		<div class="show-box" id="showBox">
+			<div class="avators">
+				<div class="clearfix">
+					<img id="img1" src="./images/aa.jpeg">
+					<img id="img2" src="./images/aa.jpeg">
+				</div>
 
-      </div>
-      <div class="title">您当前的身份为 <span id="currentID">厅店经理</span></div>
-      <div class="IDlist" id="IDlist">
+			</div>
+			<div class="title">您当前的身份为 <span id="currentID">厅店经理</span></div>
+			<div class="IDlist" id="IDlist">
 
-        <div id="change"><button>点击切换身份</button></div>
-        <div id="back"><button>返回</button></div>
-      </div>
-    </div>
-  
-</body>
-<script src="./js/index.js"></script>
+				<div id="change"><button>点击切换身份</button></div>
+				<div id="back"><button>确定</button></div>
+			</div>
+		</div>
 
-
-
-
-<script>
-  document.getElementById("changeICON").onclick = function () {
-
-    // document.getElementById("currentId").innerText=""
-    // console.log(aa)
-    showPop()
-    document.getElementById("showBox").style.display="block";
-  }
+	</body>
+	<script src="./js/index.js"></script>
 
 
-  document.getElementById("change").onclick = function(){
-    changeID()
-  }
-  function changeID(){
-  
-    console.log("****")
-    var aa = document.getElementById("currentID").innerText;
-    console.log(aa)
-    if (aa === "厅店经理") {
-      document.getElementById("currentID").innerText="装维师傅"
-      document.getElementById("img1").style.animation="scaleUp 4s normal forwards"
-      document.getElementById("img2").style.animation="scaleDown 4s normal forwards"
-      
-    } else if(aa=="装维师傅"){
-      document.getElementById("currentID").innerText= "厅店经理"
-      aa = "厅店经理"
-      document.getElementById("img1").style.animation="scaleDown 4s normal forwards"
-      document.getElementById("img2").style.animation="scaleUp 4s normal forwards"
-    }
-    // document.getElementById("currentId").innerText=""
-    
-
-    return false;
-  }
 
 
-  document.getElementById("back").onclick= function(){
-    hidePop();
-    document.getElementById("showBox").style.display="none";
-  }
+	<script>
+		document.getElementById("changeICON").onclick = function() {
 
-  function showPop() {
-    let popEle = document.getElementById("pop");
-    popEle.style.display = "block";
-
-    // let showBox = document.getElementById("showBox");
-    // showBox.style.bottom = "0";
-    // showBox.style.transition = "all .1s ease-in";
-  }
-
-  function hidePop() {
-    let popEle = document.getElementById("pop");
-    popEle.style.display = "none";
-
-    document.getElementById("showBox").style.display="none";
-
-  }
-
-  
+			// document.getElementById("currentId").innerText=""
+			// console.log(aa)
+			showPop()
+			document.getElementById("showBox").style.display = "block";
+		}
 
 
-</script>
+		document.getElementById("change").onclick = function() {
+			changeID()
+		}
+
+		function changeID() {
+
+			console.log("****")
+			var aa = document.getElementById("currentID").innerText;
+			console.log(aa)
+			if (aa === "厅店经理") {
+				document.getElementById("currentID").innerText = "装维师傅"
+				document.getElementById("img1").style.animation = "scaleUp 4s normal forwards"
+				document.getElementById("img2").style.animation = "scaleDown 4s normal forwards"
+
+			} else if (aa == "装维师傅") {
+				document.getElementById("currentID").innerText = "厅店经理"
+				aa = "厅店经理"
+				document.getElementById("img1").style.animation = "scaleDown 4s normal forwards"
+				document.getElementById("img2").style.animation = "scaleUp 4s normal forwards"
+			}
+			// document.getElementById("currentId").innerText=""
+
+
+			return false;
+		}
+
+
+		document.getElementById("back").onclick = function() {
+			hidePop();
+			document.getElementById("showBox").style.display = "none";
+		}
+
+		function showPop() {
+			let popEle = document.getElementById("pop");
+			popEle.style.display = "block";
+
+			// let showBox = document.getElementById("showBox");
+			// showBox.style.bottom = "0";
+			// showBox.style.transition = "all .1s ease-in";
+		}
+
+		function hidePop() {
+			let popEle = document.getElementById("pop");
+			popEle.style.display = "none";
+
+			document.getElementById("showBox").style.display = "none";
+
+		}
+	</script>
 
 </html>
