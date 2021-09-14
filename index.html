@@ -150,7 +150,7 @@
 				</div>
 
 			</div>
-			<div class="title">您当前的身份为 <span id="currentID">厅店经理</span></div>
+			<div class="title">您当前的身份为 <span id="currentID">装维师傅</span></div>
 			<div class="IDlist" id="IDlist">
 
 				<div id="change"><button>点击切换身份</button></div>
@@ -190,14 +190,14 @@
 			console.log(aa)
 			if (aa === "厅店经理") {
 				document.getElementById("currentID").innerText = "装维师傅"
-				document.getElementById("img1").style.animation = "scaleUp 4s normal forwards"
-				document.getElementById("img2").style.animation = "scaleDown 4s normal forwards"
+				document.getElementById("img1").style.animation = "scaleDown 2s linear normal forwards"
+				document.getElementById("img2").style.animation = "scaleUp 2s linear normal forwards"
 
 			} else if (aa == "装维师傅") {
 				document.getElementById("currentID").innerText = "厅店经理"
-				aa = "厅店经理"
-				document.getElementById("img1").style.animation = "scaleDown 4s normal forwards"
-				document.getElementById("img2").style.animation = "scaleUp 4s normal forwards"
+				// aa = "厅店经理"
+				document.getElementById("img1").style.animation = "scaleUp 2s linear normal forwards"
+				document.getElementById("img2").style.animation = "scaleDown 2s linear normal forwards"
 			}
 			// document.getElementById("currentId").innerText=""
 
