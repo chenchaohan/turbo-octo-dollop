@@ -66,3 +66,18 @@ var isScrollB0ttom = function () {
   }
 };
 window.addEventListener('scroll', isScrollB0ttom, false);
+
+
+
+
+// 推送评价二维码
+function popQrcode(id){
+	
+	let popEle = document.getElementById("popQrcode");
+	document.getElementsByTagName("body")[0].style.overflow="hidden"
+	popEle.style.display="block";
+	popEle.onclick=function(){
+		popEle.style.display="none";
+		document.getElementsByTagName("body")[0].style.overflow="unset"
+	}
+}
