@@ -190,14 +190,19 @@
 			console.log(aa)
 			if (aa === "厅店经理") {
 				document.getElementById("currentID").innerText = "装维师傅"
-				document.getElementById("img1").style.animation = "scaleDown 2s linear normal forwards"
-				document.getElementById("img2").style.animation = "scaleUp 2s linear normal forwards"
+				document.getElementById("img1").style.transition="all 1s"
+				document.getElementById("img1").style.transform="scale(.8)"
+				document.getElementById("img2").style.transition = "all 1s"
+				document.getElementById("img2").style.transform = "scale(1.2)"
 
 			} else if (aa == "装维师傅") {
 				document.getElementById("currentID").innerText = "厅店经理"
 				// aa = "厅店经理"
-				document.getElementById("img1").style.animation = "scaleUp 2s linear normal forwards"
-				document.getElementById("img2").style.animation = "scaleDown 2s linear normal forwards"
+				document.getElementById("img1").style.transition="all 1s"
+				document.getElementById("img1").style.transform="scale(1.2)"
+				document.getElementById("img2").style.transition="all 1s"
+				document.getElementById("img2").style.transform="scale(.8)"
+				
 			}
 			// document.getElementById("currentId").innerText=""
 

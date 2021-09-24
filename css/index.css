@@ -399,21 +399,21 @@ header .info .info-r em {
 	border-radius: 50%;
 }
 
-.avators img:nth-child(1) {
-	animation: scaleDown 2s linear normal forwards;
-	/* transition: scale(1.1) 4s; */
-	/* animation-fill-mode: forwards; */
-	position: absolute;
-	left: 35%;
+.show-box .avators img:nth-child(1) {
+	transition:all 1s;
+	transform: scale(1.2);
+  /* animation: scaleDown 2s linear normal forwards; */
+  /* transition: scale(1.1) 4s; */
+  /* animation-fill-mode: forwards; */
+  /* position: absolute;
+  left: 35%; */
+  /* display: none; */
 }
 
-.avators img:nth-child(2) {
-	animation: scaleUp 2s linear normal forwards;
-	/* animation-fill-mode: forwards; */
-	position: absolute;
-	left: 50%;
+.show-box .avators img:nth-child(2) {
+	transition: all 1s;
+	transform: scale(.8);
 }
-
 #currentID{
 	color:#46c0fc;
 }
